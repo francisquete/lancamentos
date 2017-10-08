@@ -1,0 +1,160 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica', sans-serif;
+	padding: 0 20px 200px;
+	background-color: #FFFAFA;
+}
+
+h1 {
+	font-size: 3em;
+	color: #696969;
+	text-align: center;
+}
+
+body p {
+	color: #808080;
+	text-align: center;
+	font-weight: bolder;
+}
+input, textarea {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #DCDCDC;
+	border-radius: 3px;
+}
+
+button {
+	display: inline-block;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.container {
+	width: 780px;
+	max-width: 90vw;
+	margin: 0 auto;
+}
+
+.lista-filmes .filme {
+	position: relative;
+	background-color: #FFF;
+	margin-bottom: 30px;
+	padding: 20px;
+	-webkit-box-shadow: 6px 6px 10px #DCDCDC; 
+	   -moz-box-shadow: 6px 6px 10px #DCDCDC;
+	        box-shadow: 6px 6px 10px #DCDCDC;
+}
+
+.lista-filmes .filme.com-cartaz {
+	overflow: hidden;
+	padding-left: 200px;
+}
+
+.lista-filmes .filme .del {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	background-color: transparent;
+	font-size: 20px;
+	line-height: 10px;
+	padding: 10px;
+	font-weight: bold;
+	overflow: hidden;
+	color: #C71585;
+}
+
+.lista-filmes .filme .del:hover {
+	color: #DC143C;
+	font-size: 1.5em;
+	-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+    		transform: rotate(45deg);
+}
+
+.lista-filmes .filme .del:after {
+	content: '\00D7';
+}
+
+.lista-filmes .filme img {
+	position: absolute;
+	width: 180px;
+
+	max-height: 260px;
+
+	top: 50%;
+	left: 0;
+
+	transform: translateY(-50%);
+}
+
+.lista-filmes .filme h1 {
+	margin: 0;
+	font-size: 1.5em;
+	color: #808080;
+}
+
+.lista-filmes .filme ul {
+	padding: 0;
+	list-style: none;
+	color: #808080;
+}
+
+.lista-filmes .filme p {
+	margin: 0;
+	text-align: left;
+	font-weight: normal;
+}
+
+.form-filmes {
+	margin-top: 30px;
+	padding: 20px;
+	color: #808080;
+	background-color: #fff;
+	font-weight: border-left: ;
+}
+
+.form-filmes h1 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+.form-filmes .form-campo {
+	margin-bottom: 10px;
+}
+
+.form-filmes .form-campo.pequeno input {
+	width: 100px;
+}
+
+.form-filmes .form-campo.medio input {
+	width: 50%;
+}
+
+.form-filmes .form-campo label {
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.form-filmes footer {
+	margin-top: 30px;
+	text-align: right;
+}
+
+.form-filmes button[type="submit"], .form-filmes button[type="reset"] {
+	background-color: #696969;
+	color: #fff;
+}
+
+.form-filmes button[type="submit"]:hover, .form-filmes button[type="reset"]:hover {
+	background-color: #A9A9A9;
+}
